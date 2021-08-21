@@ -1,0 +1,58 @@
+.container {
+    background: darkgray scroll;
+    background-clip: initial;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.question, .answer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.answer {
+    transform: rotateY(180deg);
+}
+
+.h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: antiquewhite;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 10px;
+    bottom: 10px;
+}
+
+.card {
+    min-height: 6em;
+    min-width: 6em;
+    border: 1px solid;
+    border-radius: 25px;
+    background: antiquewhite;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+    transform-style: preserve-3d;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+
